@@ -26,7 +26,7 @@ export default function Login({ navigation }) {
     async function handleLogin() {
         const data = { username: user };
         const response = await api.post('/devs', data);
-
+        console.log(response);
         const { _id } = response.data;
 
         await AsyncStorage.setItem('user', _id);

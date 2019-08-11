@@ -1,7 +1,7 @@
-import apisauce  from 'apisauce';
+import axios from 'axios';
 
-const api = apisauce.create({
-    baseURL: 'http://10.0.2.2:3333'
+const api = axios.create({
+    baseURL: 'http://10.0.2.2:3333' 
 });
 
 export default api;
